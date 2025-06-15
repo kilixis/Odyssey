@@ -14,7 +14,7 @@ const createWindow = () => {
     }
   });
 
-  win.loadFile('startmenu.html');
+  win.loadFile('createmenu.html');
 };
 
 app.whenReady().then(() => {
