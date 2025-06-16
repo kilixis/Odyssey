@@ -19,15 +19,29 @@
 }
 
 body {
+    padding: 0px;
+    margin: 0px;
     text-align: center;
     background-color: #10100e;
     overflow: hidden;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+body.fade-out {
+    opacity: 0;
 }
 
 h1 {
     text-align: center;
     color: #fff;
     font-family: "Circular";
+    background-image: url('brightearth.jpg');
+    background-size: cover;
+    background-position: top;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
     letter-spacing: 2px;
     font-size: 100px;
     margin: 2px;
@@ -83,6 +97,7 @@ button:hover {
     background-color: #c6b788;
     color: #111;
 }
+
 h3 {
     font-family: "Satoshi";
     color: #fff;
@@ -101,7 +116,8 @@ h3 {
 .openMenu {
     position: fixed;
     top: 0;
-    left: -400px; /* Start hidden */
+    left: -400px;
+    /* Start hidden */
     width: 200px;
     height: 100vh;
     display: flex;
@@ -120,9 +136,10 @@ h3 {
 .menu-open .openMenu {
     left: 0;
 }
+
 .openMenu h3 {
     font-size: 20px;
-    margin:0px;
+    margin: 0px;
     margin-bottom: 2px;
     text-align: left;
 }
@@ -138,7 +155,7 @@ h3 {
     cursor: pointer;
     text-align: left;
     width: 180px;
-    border-radius: 10px;   
+    border-radius: 10px;
     margin: 10px;
 }
 

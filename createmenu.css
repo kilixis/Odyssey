@@ -21,12 +21,24 @@
 body {
     text-align: center;
     background-color: #10100e;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+body.fade-in {
+    opacity: 1;
 }
 
 h1 {
     text-align: center;
     color: #fff;
     font-family: "Circular";
+    background-image: url('brightearth.jpg');
+    background-size: cover;
+    background-position: top;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
     letter-spacing: 2px;
     font-size: 100px;
     margin: 2px;
