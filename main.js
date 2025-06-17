@@ -53,3 +53,17 @@ ipcMain.on('resize-me-please', () => {
     console.log("win is not defined");
   }
 });
+
+ipcMain.on("open-scroll", (event, args) => {
+  const scrollWindow = new BrowserWindow({
+    fullscreen: true,
+    webPreferences: {
+      nodeIntegration: true,
+      contextIsolation: false,
+    },
+  });
+
+  scrollWindow.loadFile("scroll.html").then(() => {
+    scrollWindow.webContents.send("load-template", args.template);
+  });
+});
