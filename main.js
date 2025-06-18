@@ -1,5 +1,5 @@
 const { app, BrowserWindow, ipcMain } = require('electron');
-
+const path = require('path');
 let win;
 
 const createWindow = () => {
@@ -58,8 +58,9 @@ ipcMain.on("open-scroll", (event, args) => {
   const scrollWindow = new BrowserWindow({
     fullscreen: true,
     webPreferences: {
+      preload: path.join(__dirname, 'preload.js'),
       nodeIntegration: true,
-      contextIsolation: false,
+      contextIsolation: false
     },
   });
 

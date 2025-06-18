@@ -85,7 +85,7 @@ button {
     height: 45px;
     border-radius: 10px;
     font-family: "Satoshi";
-    background-color: #f0d47f;
+    background-color: #9ba3d9;
     color: #111;
     font-size: 18px;
     font-weight: 600;
@@ -94,7 +94,7 @@ button {
 
 button:hover {
     cursor: pointer;
-    background-color: #c6b788;
+    background-color: #b0b8f2;
     color: #111;
 }
 

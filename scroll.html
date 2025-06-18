@@ -1,40 +1,18 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <link rel="stylesheet" href="index.css" />
   <meta charset="UTF-8" />
-  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
-  <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
-  <title>Odyssey</title>
+  <title>Odyssey Scroll</title>
+  <link rel="stylesheet" href="scroll.css" />
 </head>
-
 <body>
-  <div class="openMenu">
-    <div class="openable">
-      <h3 id = "name">Name</h3>
-      <p id="source">Source</p>
-    </div>
-  </div>
-  <div class="main-content">
-  <h1>Odyssey</h1>
-  <p>Version 1.0.0</p>
-    <center>
-      <div class="options">
-        <div class=option>
-          <h3>Create a new scroll</h3>
-          <button id="newScroll">Create</button>
-        </div>
-        <hr>
-        <div class=option>
-          <h3>Open an existing scroll</h3>
-          <button id="open">Open</button>
-        </div>
-      </div>
-    </center>
-  </div>
+  <header>
+    <h3 id="scroll-title">Scroll Title</h3>
+  </header>
+
+  <main id="sections">
+  </main>
+
   <script src="scroll.js"></script>
 </body>
-
 </html>

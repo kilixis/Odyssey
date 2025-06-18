@@ -1,3 +1,5 @@
+const { ipcRenderer } = require('electron');
+
 window.addEventListener('DOMContentLoaded', () => {
     console.log("loaded");
     setTimeout(() => {

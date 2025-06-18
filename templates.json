@@ -1,0 +1,51 @@
+{
+    "studyStack": {
+      "title": "Study Stack",
+      "icon": "📚",
+      "sections": [
+        {
+          "name": "Reading Queue",
+          "tasks": [
+            {
+              "text": "Read Chapter 3",
+              "done": false,
+              "notes": ["Remember to summarize after reading"]
+            },
+            {
+              "text": "Watch lecture on Quantum",
+              "done": true,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "name": "Assignments",
+          "tasks": [
+            {
+              "text": "Submit Essay",
+              "done": false,
+              "notes": ["Check plagiarism before submitting", "Add citation"]
+            }
+          ]
+        }
+      ]
+    },
+  
+    "mindspace": {
+      "title": "Mindspace",
+      "icon": "🧘",
+      "sections": [
+        {
+          "name": "Mood Journal",
+          "tasks": [
+            {
+              "text": "Log feelings for today",
+              "done": false,
+              "notes": ["Focus on evening thoughts"]
+            }
+          ]
+        }
+      ]
+    }
+  }
+  
