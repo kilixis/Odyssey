@@ -58,10 +58,10 @@ ipcMain.on("open-scroll", (event, args) => {
   const scrollWindow = new BrowserWindow({
     fullscreen: true,
     webPreferences: {
-      preload: path.join(__dirname, 'preload.js'),
-      nodeIntegration: true,
-      contextIsolation: false
-    },
+      nodeIntegration: false,
+      contextIsolation: true,
+      preload: path.join(__dirname, 'preload.js')
+    }
   });
 
   scrollWindow.loadFile("scroll.html").then(() => {

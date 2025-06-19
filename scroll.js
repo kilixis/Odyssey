@@ -1,7 +1,12 @@
-const { ipcRenderer } = require('electron');
+window.addEventListener('DOMContentLoaded', () => {
+  if (!window.api) {
+    console.error("window.api is not defined");
+    return;
+  }
 
-const template = window.templateAPI.getTemplateData('studyStack');
-renderScroll(template);
+  const template = window.api.getTemplate('studyStack');
+  renderScroll(template);
+});
 
 function renderScroll(template) {
   document.getElementById("scroll-title").innerText = `${template.icon} ${template.title}`;
