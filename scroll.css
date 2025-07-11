@@ -117,7 +117,7 @@ h3 {
     position: fixed;
     top: 0;
     left: -400px;
-    /* Start hidden */
+    /* hide start */
     width: 200px;
     height: 100vh;
     display: flex;
